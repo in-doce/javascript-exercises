@@ -8,7 +8,7 @@ function extractCurrencyValue(str) {
   const indexDollar = str.indexOf('$');
   if ( indexDollar === -1 && !isFinite(str) ) return 'Ingrese un valor numérico';
 
-  return +  str.slice(indexDollar + 1);
+  return +str.slice(indexDollar + 1);
 }
 
 console.log(extractCurrencyValue('$123'));
